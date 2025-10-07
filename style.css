@@ -16,6 +16,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -284,9 +286,15 @@ body {
     margin-bottom: 0.5rem;
 }
 
+
 .category-card p {
     color: #777;
 }
+
+
+
+
+
 
 /* ===== SOBRE MÍ ===== */
 .about {
@@ -394,10 +402,14 @@ body {
 }
 
 /* ===== FOOTER ===== */
-.footer {
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
     background: var(--gris-oscuro);
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 3rem 0 1rem;
+    border-top: 1px solid #ddd;
 }
 
 .footer-content {

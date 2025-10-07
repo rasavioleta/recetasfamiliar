@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Blog Culinario</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"> <!-- Asegúrate que el nombre coincida -->
 </head>
 <body>
 
+  <div class="container">
+
   <!-- HEADER -->
-  <header>
+  <header class="header">
+  <div class="container">
+    
     <div class="logo">
-      <h1>🍴 Mi Blog Culinario</h1>
+      <h1>Mi Blog Culinario</h1>
       <p>Recetas caseras con amor</p>
     </div>
-    <nav class="nav-menu">
+
+    <nav>
       <ul class="menu-list">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#recetas">Recetas</a></li>
@@ -23,74 +28,179 @@
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
-  </header>
+
+  </div>
+</header>
+
 
   <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero-content">
-      <h1>Descubre el Arte de la Cocina</h1>
-      <p>Recetas tradicionales, técnicas modernas y sabores inolvidables</p>
-      <button class="cta-button">Explorar Recetas</button>
-    </div>
-  </section>
+   <section class="hero" id="inicio">
+  <div class="hero-content">
+    <h1>Descubre el Arte de la Cocina</h1>
+    <p>Recetas tradicionales, técnicas modernas y sabores inolvidables</p>
+    <a href="#recetas" class="cta-button">Explorar Recetas</a>
+  </div>
+</section>
 
   <!-- RECETAS -->
-  <section id="recetas">
-    <h2>Recetas Destacadas</h2>
-    <div class="recetas-grid">
-      <article class="receta-card">
-        <img src="pan-de-elote.jpg" alt="Pan de Elote">
+  <section class="featured-recipes" id="recetas">
+  <h2>Recetas Destacadas</h2>
+  <div class="recipes-grid">
+
+    <div class="recipe-card">
+      <div class="recipe-image">
+        <img src="imag/Pin en PostreS.jpeg" alt="Pan de Elote">
+        <span class="recipe-badge">⭐ Receta destacada</span>
+      </div>
+      <div class="recipe-content">
         <h3>Pan de Elote</h3>
-        <p>⏱️ 45 min | 🧑‍🍳 Fácil</p>
-        <span>⭐ Receta destacada</span>
-        <button>Ver receta</button>
-      </article>
-      <article class="receta-card">
-        <img src="chiles-rellenos.jpg" alt="Chiles Rellenos">
-        <h3>Chiles Rellenos</h3>
-        <p>⏱️ 60 min | 🧑‍🍳 Media</p>
-        <button>Ver receta</button>
-      </article>
-      <article class="receta-card">
-        <img src="alegrias.jpg" alt="Alegrías">
-        <h3>Alegrías</h3>
-        <p>⏱️ 30 min | 🧑‍🍳 Fácil</p>
-        <button>Ver receta</button>
-      </article>
+        <div class="recipe-meta">
+          <span>⏱️ 45 min</span>
+          <span>🧑‍🍳 Fácil</span>
+        </div>
+        <p>Una receta familiar que se solía preparar después de cada cosecha de otoño.</p>
+        <a href="pan.html" class="recipe-button">Ver receta</a>
+      </div>
     </div>
-  </section>
+
+    <div class="recipe-card">
+      <div class="recipe-image">
+        <img src="imag/descargar (12).jpeg" alt="Chiles Rellenos">
+        <span class="recipe-badge">⭐ Receta destacada</span>
+      </div>
+      <div class="recipe-content">
+        <h3>Chiles Rellenos</h3>
+        <div class="recipe-meta">
+          <span>⏱️ 60 min</span>
+          <span>🧑‍🍳 Media</span>
+        </div>
+        <p>Este platillo suele ser preparado en fechas especiales en mi familia.</p>
+        <a href="chiles.html" class="recipe-button">Ver receta</a>
+      </div>
+    </div>
+
+    <div class="recipe-card">
+      <div class="recipe-image">
+        <img src="imag/Alegrías de amaranto.jpeg" alt="Alegrías">
+        <span class="recipe-badge">⭐ Receta destacada</span>
+      </div>
+      <div class="recipe-content">
+        <h3>Alegrías</h3>
+        <div class="recipe-meta">
+          <span>⏱️ 30 min</span>
+          <span>🧑‍🍳 Fácil</span>
+        </div>
+        <p>Suele ser un pequeño bocadillo realizado en invierno para compartir entre familia.</p>
+        <a href="alegrias.html" class="recipe-button">Ver receta</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- CATEGORÍAS -->
-  <section id="categorias">
-    <h2>Categorías</h2>
-    <ul>
-      <li>Postres (5)</li>
-      <li>Platos principales (8)</li>
-      <li>Antojitos (4)</li>
-      <li>Vegetarianos (3)</li>
-    </ul>
-  </section>
+ <section class="categories" id="categorias">
+  <h2>Categorías</h2>
+  <div class="categories-grid">
+
+    <div class="category-card">
+      <span class="category-icon">🍰</span>
+      <h3>Postres</h3>
+      <p>Delicias dulces para cerrar con broche de oro.</p>
+    </div>
+
+    <div class="category-card">
+      <span class="category-icon">🍲</span>
+      <h3>Platos principales</h3>
+      <p>Recetas sustanciosas para compartir en familia.</p>
+    </div>
+
+    <div class="category-card">
+      <span class="category-icon">🌮</span>
+      <h3>Antojitos</h3>
+      <p>Bocados típicos llenos de sabor y tradición.</p>
+    </div>
+
+    <div class="category-card">
+      <span class="category-icon">🥦</span>
+      <h3>Vegetarianos</h3>
+      <p>Opciones frescas y nutritivas para todos los gustos.</p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- SOBRE MÍ -->
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>Soy Daniela, apasionada por la cocina mexicana y por compartir recetas que conectan con nuestras raíces.</p>
-    <a href="https://instagram.com">Sígueme en Instagram</a>
-  </section>
+  <section class="about" id="sobre-mi">
+  <div class="about-content">
+    
+    <div class="about-text">
+      <h2>Sobre mí</h2>
+      <p>¡Hola! Soy Daniela, diseñadora de modas y apasionada por la cocina mexicana. Este blog nace del deseo de compartir recetas familiares que han pasado de generación en generación, fusionando tradición, diseño y aprendizaje.</p>
+      <p>Me encanta experimentar en la cocina, documentar el proceso y crear recursos visuales que hagan del aprendizaje algo delicioso y accesible.</p>
+      
+      <div class="social-links">
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="mailto:hola@blogculinario.com">Correo</a>
+      </div>
+    </div>
+
+    <div class="about-image">
+      <img src="imag/descargar (15).jpeg" alt="Daniela cocinando en su cocina">
+    </div>
+
+  </div>
+</section>
+
 
   <!-- NEWSLETTER -->
-  <section id="contacto">
-    <h2>Suscríbete</h2>
-    <form>
-      <input type="email" placeholder="Tu correo electrónico">
-      <button type="submit">Suscribirme</button>
-    </form>
-  </section>
+<section class="newsletter" id="suscribete">
+  <h2>Suscríbete al boletín</h2>
+  <p>Recibe recetas tradicionales, tips de cocina y novedades directamente en tu correo.</p>
+  <form class="newsletter-form">
+    <input type="email" placeholder="Tu correo electrónico" required>
+    <button type="submit">Suscribirme</button>
+  </form>
+</section>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2025 Mi Blog Culinario | Contacto: hola@blogculinario.com</p>
-  </footer>
 
+  
+   
+  <footer id="contacto">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Sobre el Blog</h3>
+      <p>Recetas mexicanas con historia, tradición y mucho sabor.</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Categorías</h3>
+      <ul>
+        <li><a href="#postres">Postres</a></li>
+        <li><a href="#principales">Platos principales</a></li>
+        <li><a href="#antojitos">Antojitos</a></li>
+        <li><a href="#vegetarianos">Vegetarianos</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contacto</h3>
+      <ul>
+        <li><a href="mailto:hola@blogculinario.com">hola@blogculinario.com</a></li>
+        <li><a href="https://instagram.com">Instagram</a></li>
+        <li><a href="#suscribete">Suscríbete</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Mi Blog Culinario | Diseñado con amor por Daniela</p>
+  </div>
+</footer>
+
+</div>
 </body>
 </html>
