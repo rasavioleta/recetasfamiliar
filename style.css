@@ -1,19 +1,41 @@
 
 :root {
-    --rojo-tomate: #e74c3c;
-    --verde-albahaca: #27ae60;
-    --naranja-zanahoria: #e67e22;
-    --amarillo-maiz: #f1c40f;
-    --marron-chocolate: #8b4513;
-    --blanco-hueso: #fdf6e3;
-    --gris-claro: #ecf0f1;
-    --gris-oscuro: #2c3e50;
+  --rojo-tomate: #e74c3c;
+  --verde-albahaca: #27ae60;
+  --naranja-zanahoria: #e67e22;
+  --amarillo-maiz: #f1c40f;
+  --marron-chocolate: #8b4513;
+  --blanco-hueso: #fdf6e3;
+  --gris-claro: #ecf0f1;
+  --gris-oscuro: #2c3e50;
+
+  /* Modo oscuro */
+  --fondo-oscuro: #1e1e1e;
+  --texto-oscuro: #f5f5f5;
+  --gris-oscuro-alt: #444;
 }
+
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body.dark-mode {
+  background-color: var(--fondo-oscuro);
+  color: var(--texto-oscuro);
+}
+
+body.dark-mode .header,
+body.dark-mode .recipe-card,
+body.dark-mode .footer-content {
+  background-color: var(--gris-oscuro-alt);
+  color: var(--texto-oscuro);
+}
+
+body.dark-mode a {
+  color: var(--amarillo-maiz);
 }
 
 
@@ -30,6 +52,7 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+
 
 /* ===== HEADER Y NAVEGACIÓN ===== */
 .header {

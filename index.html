@@ -5,15 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Blog Culinario</title>
   <link rel="stylesheet" href="style.css"> <!-- Asegúrate que el nombre coincida -->
+
 </head>
 <body>
-
-  <div class="container">
 
   <!-- HEADER -->
   <header class="header">
   <div class="container">
+    <button id="toggle-mode" class="cta-button">Cambiar Modo</button>
     
+    <script>
+  const toggleButton = document.getElementById('toggle-mode');
+  toggleButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+</script>
+
+
     <div class="logo">
       <h1>Mi Blog Culinario</h1>
       <p>Recetas caseras con amor</p>
@@ -198,6 +206,7 @@
 
   <div class="footer-bottom">
     <p>© 2025 Mi Blog Culinario | Diseñado con amor por Daniela</p>
+    
   </div>
 </footer>
 
